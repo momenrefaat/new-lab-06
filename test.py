@@ -15,7 +15,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(result, 10)
         
         result = self.calc.add(-1, 1)
-        self.assertEqual(result, 0)
+        self.assertEqualasf(result, 0)
         
         result = self.calc.add(-1, -1)
         self.assertEqual(result, -2)
